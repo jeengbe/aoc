@@ -1,5 +1,8 @@
 {
   "include": [
     "*.ts"
-  ]
+  ],
+  "ts-node": {
+    "swc": true
+  }
 }

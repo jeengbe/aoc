@@ -53,7 +53,7 @@ export const tests2 = [
     if (input.length === 1 || (input.length === 2 && input[1] === ""))
       input = input[0].split(",");
     if (input.at(-1) === "") input.pop();
-    const inputAsNumbers = input.map((i) => parseInt(i));
+    const inputAsNumbers = input.map(Number);
     if (inputAsNumbers.every(Number.isFinite)) {
       // @ts-ignore
       input = inputAsNumbers;
